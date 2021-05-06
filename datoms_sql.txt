@@ -1,0 +1,1 @@
+select student.first_name,student.last_name,datediff(year,student.dob,'01-01-2000')from student leftjoin course where (course.stu_id=student.stu_id) and (course.course_name = 'physics' or course.course_name= 'maths')
